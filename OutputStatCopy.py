@@ -159,7 +159,7 @@ def main():
 	if len(sys.argv) ==4:
 		outdir=sys.argv[3]
 	elif len(sys.argv) ==3:
-		outdir='D:\\\\'+chipname
+		outdir='D:\\CopyData\\'+chipname
 	copy_DataThumbFOVFigs(dirD,chipname,outdir)
 	copy_Metrics(dirM,chipname,outdir)
 	copy_ResultStatHtml(dirR,chipname,outdir)
