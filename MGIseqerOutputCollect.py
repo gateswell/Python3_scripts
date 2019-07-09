@@ -9,9 +9,9 @@ def help_info():
 	info='''
 ============================================================================
 Usage:
-	python OutputStatCopy.py <chip name> <date:20190101> <outdir>
+	python MGIseqerOutputCollect.py <chip name> <date:20190101> <outdir>
 Example:
-	python OutputStatCopy.py V300018621 20190101 D:\CopyData
+	python MGIseqerOutputCollect.py V300018621 20190101 D:\tmp
 Version:
 	V1.0.0.0
 Note:
@@ -34,9 +34,9 @@ def get_days(date,num=10):	#date format:20190101
 	#date=int(date)
 	alldays=[]
 	for i in range(num):
-		befday=format_date-datetime.timedelta(days=i)
-		format_befday=befday.strftime("%Y%m%d")
-		alldays.append(format_befday)
+		be4day=format_date-datetime.timedelta(days=i)
+		format_be4day=be4day.strftime("%Y%m%d")
+		alldays.append(format_be4day)
 		#print format_befday
 	return alldays
 
