@@ -37,6 +37,8 @@ def seq2list(file):
 		baseA,baseC,baseG,baseT=['','','','']
 		line_num=0;
 		for line in fh:
+			if line.startswith('#'):
+				continue
 			line_num+=1
 			lines=line.split()
 			seqs=list(lines[1].upper().strip())
